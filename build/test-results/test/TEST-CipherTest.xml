@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CipherTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-28T17:39:11" hostname="arunda-HP-Notebook" time="0.008">
-  <properties/>
-  <testcase name="encrypt_input_is_encrypted_String" classname="CipherTest" time="0.007"/>
-  <testcase name="textInput_input_is_a_string_true" classname="CipherTest" time="0.0"/>
-  <testcase name="textOutput_output_is_a_string_true" classname="CipherTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
