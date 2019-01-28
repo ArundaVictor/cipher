@@ -64,30 +64,45 @@ public class Encoding {
 
 
     public String encrypt(String input, int key){
-        int cipherLength = input.length();
-        for (int i = 0; i < cipherLength; i++){
-            char ch = input.charAt(i);
 
-            if (Character.isLetter(ch)){
-                if (Character.isLowerCase(ch)){
-                    char c = (char)(ch+key);
-                    if (c>'z'){
-                        result += (char)(ch - (25-key));
+        int textLength = input.length();
+
+        for (int i = 0; i < textLength; i++){
+
+
+            char newChar = input.charAt(i);
+
+            if (Character.isLetter(newChar)){
+
+
+                if (Character.isLowerCase(newChar)){
+                    char n = (char)(newChar+key);
+
+
+                    if (n>'z'){
+                        result += (char)(newChar - (25-key));
+
                     }else{
-                       result += c;
+
+                       result += n;
                     }
-                }else if (Character.isUpperCase(ch)){
-                    char c = (char)(ch+key);
-                    if (c>'Z'){
-                        result += (char)(ch - (25-key));
+
+                }else if (Character.isUpperCase(newChar)){
+
+                    char n = (char)(newChar+key);
+
+                    if (n>'Z'){
+
+                        result += (char)(newChar - (25-key));
                     }else{
-                        result += c;
+                        
+                        result += n;
                     }
                 }
 
             }else{
 
-                result += ch;
+                result += newChar;
             }
 
         }

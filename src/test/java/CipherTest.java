@@ -7,19 +7,19 @@ public class CipherTest {
     @Test
     public void textInput_input_is_a_string_true() {
         Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1 , "njkbjk");
-        assertEquals(true,cipher.textInput("test"));
+        assertEquals(true,cipher.textInput(expectedoutput, "test"));
     }
 
     @Test
     public void textOutput_output_is_a_string_true() {
         Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1, "vhvh");
-        assertEquals(true,cipher.textOutput("test"));
+        assertEquals(true,cipher.textOutput(expectedoutput, "test"));
     }
 
     @Test
     public void encrypt_input_is_encrypted_String() {
-        Encoding encoding = new Encoding("gchg","bjhbj",1,"vhgvu");
-        assertEquals("true",encoding.encrypt("test",1));
+        Encoding encoding = new Encoding("three","bjhbj",1,"vhgvu");
+        assertEquals("true",encoding.encrypt(expectedoutput,"test",1));
     }
 
 }

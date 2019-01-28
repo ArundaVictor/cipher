@@ -15,6 +15,7 @@ import java.io.Console;
 
 public class App {
     public static void main(String[] args) {
+    	
     	Console myConsole = System.console();
         Encoding encoding = new Encoding("","",5,"");
 
@@ -26,12 +27,14 @@ public class App {
 
 
           if (navigationChoice.equals("Decrypt")){
+
         System.out.println("Enter the text you want to encrypt:");
          String userString = myConsole.readLine();
         encoding.setMinput(userString);
         encoding.encrypt(userString,5);
         System.out.println("Encoded string: " + encoding.getResult());
          System.out.println("Decrypted string: " + encoding.getMinput() );
+
 	      }else if (navigationChoice.equals("Exit")) {
 	      	  programRunning = false;
 	      }
