@@ -18,13 +18,22 @@ public class App {
     	Console myConsole = System.console();
         Encoding encoding = new Encoding("","",5,"");
 
+          boolean programRunning = true;
+
+            
+        System.out.println("Welcome to Ceaser Cipher applicatin. What would you like to do? Decrypt or Exit");
+        String navigationChoice = myConsole.readLine();
 
 
+          if (navigationChoice.equals("Decrypt")){
         System.out.println("Enter the text you want to encrypt:");
          String userString = myConsole.readLine();
         encoding.setMinput(userString);
         encoding.encrypt(userString,5);
-        System.out.println("Input: " + encoding.getMinput() );
-        System.out.println("Encoded text is: " + encoding.getResult());
+        System.out.println("Encoded string: " + encoding.getResult());
+         System.out.println("Decrypted string: " + encoding.getMinput() );
+	      }else if (navigationChoice.equals("Exit")) {
+	      	  programRunning = false;
 	      }
 	  }
+	}
