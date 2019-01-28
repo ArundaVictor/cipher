@@ -6,7 +6,7 @@ public class Encoding {
     private String moutput;
     private String result;
 
-    public Encoding(String input, String output, int key, String mresult) {
+    public Encoding (String input, String output, int key, String mresult) {
         minput = input;
         moutput = output;
         mkey = key;
@@ -95,7 +95,7 @@ public class Encoding {
 
                         result += (char)(newChar - (25-key));
                     }else{
-                        
+
                         result += n;
                     }
                 }

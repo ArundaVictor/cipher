@@ -6,20 +6,20 @@ public class CipherTest {
 
     @Test
     public void textInput_input_is_a_string_true() {
-        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1 , "njkbjk");
-        assertEquals(true,cipher.textInput(expectedoutput, "test"));
+        Encoding cipherText = new Encoding("one", "one", 1 , "pof");
+        assertEquals(true,cipherText.textInput(expectedoutput, "test"));
     }
 
     @Test
     public void textOutput_output_is_a_string_true() {
-        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1, "vhvh");
-        assertEquals(true,cipher.textOutput(expectedoutput, "test"));
+        Encoding cipherText = new Encoding("two", "two", 1, "uxp");
+        assertEquals(true,cipherText.textOutput(expectedoutput, "test"));
     }
 
     @Test
     public void encrypt_input_is_encrypted_String() {
-        Encoding encoding = new Encoding("three","bjhbj",1,"vhgvu");
-        assertEquals("true",encoding.encrypt(expectedoutput,"test",1));
+        Encoding encodedText = new Encoding("three","three",1,"uisee");
+        assertEquals("true",encodedText.encrypt(expectedoutput,"test",1));
     }
 
 }
