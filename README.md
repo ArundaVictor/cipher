@@ -1,6 +1,6 @@
 # CEASAR CIPHER
 
-This is an application where users can encrypt a text or message.
+This is a java application where users can encrypt a text or message.
 
 #### By **Arunda Victor Oyugi**
 
@@ -37,6 +37,7 @@ This apllication was written using Java programming language.
 In case of any questions or feedback or clarifications, you can reach me at:
 victoroyugi31@gmail.com
 0705427223
+
 ### License
 *Licenced under the [MIT Licence](LICENCE).*
 Copyright (c) 2019 **Arunda Victor oyugi**

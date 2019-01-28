@@ -2,7 +2,7 @@ public class Encoding {
 
     private String minput;
     private int mkey;
-    Boolean res = false;
+    Boolean resencrypt = false;
     private String moutput;
     private String result;
 
@@ -17,11 +17,11 @@ public class Encoding {
 
         for (int i = 0; i < input.length(); i++)
             if (Character.isDigit(input.charAt(i)) == false){
-                res = true;
+                resencrypt = true;
             }else {
-                res = false;
+                resencrypt = false;
             }
-        return res;
+        return resencrypt;
     }
 
 

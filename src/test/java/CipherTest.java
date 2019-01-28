@@ -5,21 +5,21 @@ public class CipherTest {
 
 
     @Test
-    public void textInput_check_if_input_is_a_string_true() {
-        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 15 , "njkbjk");
+    public void textInput_input_is_a_string_true() {
+        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1 , "njkbjk");
         assertEquals(true,cipher.textInput("test"));
     }
 
     @Test
-    public void textOutput_check_if_output_is_a_string_true() {
-        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 15, "vhvh");
+    public void textOutput_output_is_a_string_true() {
+        Encoding cipher = new Encoding("vghcghch", "vghchgchg", 1, "vhvh");
         assertEquals(true,cipher.textOutput("test"));
     }
 
     @Test
-    public void encrypt_check_if_input_is_encrypted_String() {
-        Encoding encoding = new Encoding("gchg","bjhbj",15,"vhgvu");
-        assertEquals("true",encoding.encrypt("test",15));
+    public void encrypt_input_is_encrypted_String() {
+        Encoding encoding = new Encoding("gchg","bjhbj",1,"vhgvu");
+        assertEquals("true",encoding.encrypt("test",1));
     }
 
 }
